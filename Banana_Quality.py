@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 loaded_model = pickle.load(open('b_training_model.sav', 'rb'))
-
+ 
 def banana_quality_prediction(input_data):
     input_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
